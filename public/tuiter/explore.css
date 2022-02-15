@@ -1,0 +1,12 @@
+* {background-color: black}
+.rounded-corners-all-around {
+    border-radius: 100px;
+    background: gray;
+    color: white;
+}
+body {
+    color:white
+}
+li {
+    display: inline-block;
+}
