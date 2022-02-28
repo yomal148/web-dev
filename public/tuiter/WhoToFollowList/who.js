@@ -1,0 +1,17 @@
+export default [
+    {   avatarIcon: '../../tuiter/java.jpg',
+        userName: 'Java',
+        handle: 'Java', },
+    {   avatarIcon: '../../tuiter/relativity.jpeg',
+        userName: 'Relativity Space',
+        handle: 'relativityspace', },
+    {   avatarIcon: '../../tuiter/virgin.png',
+        userName: 'Virgin Galactic',
+        handle: 'virgingalactic', },
+    {   avatarIcon: '../../tuiter/nasa.png',
+        userName: 'NASA',
+        handle: 'NASA', },
+    {   avatarIcon: '../../tuiter/tesla.jpeg',
+        userName: 'Tesla',
+        handle: 'Tesla', },
+];
