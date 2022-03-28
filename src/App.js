@@ -8,17 +8,27 @@ import Labs from "./components/labs";
 import HomeScreen from './components/tuiter/HomeScreen';
 import ExploreScreen from './components/tuiter/ExploreScreen';
 import Tuiter from "./components/tuiter";
+import ProfileScreen from './components/tuiter/ProfileScreen';
+import ProfileEditScreen from './components/tuiter/EditProfile';
 
 function App() {
   return (
       <BrowserRouter>
       <div className="container">
           <Routes>
-              <Route path="/hello" exact={true} element={<HelloWorld/>}/>
-              <Route path="/" exact={true} element={<Labs/>}/>
-              <Route path="/tuiter" exact={true} element={<Tuiter/>}/>
-              <Route path="/tuiter/home" exact={true} element={<HomeScreen/>}/>
-              <Route path="/tuiter/explore" exact={true} element={<ExploreScreen/>}/>
+              <Route path="/">
+                  <Route index element={<Labs/>}/>
+                  <Route path="labs" element={<Labs/>}/>
+                  <Route path="hello" element={<HelloWorld/>}/>
+                  <Route path="tuiter" element={<Tuiter/>}>
+                      <Route index element={<HomeScreen/>}/>
+                      <Route path="explore" element={<ExploreScreen/>}/>
+                      <Route path="profile">
+                          <Route index element={<ProfileScreen/>}/>
+                          <Route path="edit" element={<ProfileEditScreen/>}/>
+                      </Route>
+                  </Route>
+              </Route>
           </Routes>
       </div>
       </BrowserRouter>
