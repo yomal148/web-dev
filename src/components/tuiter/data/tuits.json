@@ -14,11 +14,12 @@
     "image": "/tuiter/inspiration4x.png",
     "summary": "From training to launch to landing, this all-access docuseries rides along with the Inspiration4 crew on thefirst all-civilian orbital space ...",
     "link": "netflix.com",
-    "stats": {
-      "comments": "4200",
-      "retuits": "3500",
-      "likes": "300"
-    }
+
+    "comments": "4200",
+    "retuits": "3500",
+    "likes": "300",
+    "dislikes": "150"
+
   },
   {
     "_id": "101",

@@ -2,14 +2,11 @@ import React from 'react';
 import SummaryPicture from './SummaryPicture';
 import { useDispatch } from 'react-redux';
 import TuitStats from './TuitStats';
+import { deleteTuit } from '../actions/tuits-actions';
 
 const TuitListItem = ({tuit}) => {
 
     const dispatch = useDispatch();
-
-    const deleteTuit = (tuit) => {
-        dispatch({type: 'delete-tuit', tuit});
-    };
 
     return (
         <>
@@ -30,8 +27,8 @@ const TuitListItem = ({tuit}) => {
                            dangerouslySetInnerHTML={{__html: tuit.tuit}}/>
                     </div>
                     <div className="col-1">
-                        <button className="btn btn-sm wd-font-white">
-                            <i onClick={() => deleteTuit(tuit)}
+                        <button className="fas fa-remove float-end">
+                            <i onClick={() => deleteTuit(dispatch, tuit)}
                                className="fa-solid fa-xmark"></i>
                         </button>
                     </div>

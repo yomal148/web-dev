@@ -41,7 +41,7 @@ const ExploreComponent = () => {
             {/*showcase picture*/}
             <div className="position-relative mb-2">
                 <img className="img-fluid"
-                     src="https://techcrunch.com/wp-content/uploads/2019/09/Starship-Mk1-Day.jpg?w=1390&crop=1"
+                     src="/tuiter/spacex.jpeg"
                      alt="spacex"
                 />
                 <div className="wd-picture-title fs-2 text-white">SpaceX's Starship</div>
